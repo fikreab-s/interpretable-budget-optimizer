@@ -94,11 +94,11 @@ The adstock equation $A_{t+1} = \theta A_t + b_t$ is a **first-order linear recu
 - **Lyapunov analysis:** $V(A) = (A - A^*)^2$ is a Lyapunov function
 - **Sensitivity:** $\partial A^*/\partial \theta = b/(1-\theta)^2$ — small changes in carryover have amplified effects
 
-## 🏥 Merck Commercial Analytics Connection
+## 🏥 Enterprise Pharma Application
 
-This is a **direct formalization of my core Merck deliverable** — CSO (Commercial Spend Optimization):
+This is a **direct formalization of my core enterprise pharma deliverable** — CSO (Commercial Spend Optimization):
 
-| CSO at Merck | This Repo |
+| CSO in enterprise pharma settings | This Repo |
 |---|---|
 | Budget optimization across 8+ brands | Constrained nonlinear program |
 | Diminishing returns analysis | Hill saturation functions |
@@ -108,7 +108,7 @@ This is a **direct formalization of my core Merck deliverable** — CSO (Commerc
 | Excel Solver (current tool) | SQP + JAX/Optax (scalable) |
 | Manual interpretation | LFM2.5-generated explanations |
 
-**Key insight:** I established 'CSO' as the standard approach for portfolio-level budget optimization at Merck. This repo is the open-source, mathematically rigorous version.
+**Key insight:** I established 'CSO' as the standard approach for portfolio-level budget optimization in enterprise pharma settings. This repo is the open-source, mathematically rigorous version.
 
 ## 🚀 Quickstart
 
@@ -139,23 +139,6 @@ python scripts/dashboard.py
 | Solve time (20 channels) | 45s | 1.2s | **0.15s** |
 | Sensitivity analysis | manual | automatic | **auto + AD** |
 | Dual variable extraction | ❌ | ✅ | ✅ |
-
-## 🎤 Interview Talking Points
-
-- **"Explain shadow prices"** — "The dual variable $\mu^*$ tells you the marginal value of budget. If $\mu^*=2.5$, investing $1M more yields $2.5M revenue. This is what I explain to VP-level stakeholders at Merck."
-- **"Why not just linear programming?"** — "Hill saturation is nonlinear and non-convex in general. But with $K \leq 1$, the log-transform makes it concave. I use SQP with multi-start for the general case."
-- **"PhD connection?"** — "My thesis was in dynamical systems and optimization. The adstock equation is a first-order recurrence, and the budget problem is a constrained NLP — these are the exact structures I studied."
-
-## 📋 Resume Bullet
-
-> "Built interpretable budget optimization engine with Hill saturation, dual variable analysis, and JAX-accelerated solving — 25x faster than Excel Solver with automatic sensitivity analysis and LFM-powered natural language explanations."
-
-## 🔗 Liquid AI Connection
-
-- **PhD alignment:** Optimization + dynamical systems = native LFM architecture understanding
-- **Enterprise value:** Every Liquid AI customer doing marketing analytics needs this
-- **Small model:** LFM2.5 explains optimization results in natural language
-- **Interpretability:** Dual variables provide mathematical guarantees, not just model outputs
 
 ## License
 
