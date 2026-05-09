@@ -143,3 +143,11 @@ python scripts/dashboard.py
 ## License
 
 MIT
+
+## 📸 Visual Tour
+
+![Training Dynamics](viz/optimization_convergence.gif)
+
+![sensitivity analysis](viz/sensitivity_analysis.png)
+
+---
