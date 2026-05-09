@@ -1,6 +1,9 @@
-# 📐 Interpretable Budget Optimizer
+# Budget Optimizer with Hill Saturation & KKT Analysis
 
-> Constrained nonlinear optimization engine for marketing budget allocation with Hill saturation curves, interpretable dual variables, and LFM2.5-powered natural language explanations.
+> Constrained nonlinear budget optimization across marketing channels using Hill saturation functions, with interpretable dual variable (shadow price) analysis for stakeholder communication.
+>
+> **Context:** The math behind our promotional spend allocation. Hill functions model diminishing returns per channel; KKT conditions ensure the optimizer's recommendations are explainable to brand teams, not just numerically optimal.
+
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
