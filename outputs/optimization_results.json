@@ -1,0 +1,32 @@
+{
+  "optimal_allocation": {
+    "TV": 15.5845,
+    "Digital": 9.7124,
+    "Print": 3.4594,
+    "Email": 5.0,
+    "Rep_Visits": 13.0307,
+    "Webinars": 3.213
+  },
+  "total_effect": 112.8406,
+  "budget_shadow_price": 0.5319,
+  "marginal_rois": {
+    "TV": 0.5319,
+    "Digital": 0.5319,
+    "Print": 0.5319,
+    "Email": 0.5556,
+    "Rep_Visits": 0.5319,
+    "Webinars": 0.5319
+  },
+  "channel_effects": {
+    "TV": 30.7311,
+    "Digital": 22.2653,
+    "Print": 8.521,
+    "Email": 16.6667,
+    "Rep_Visits": 27.3087,
+    "Webinars": 7.3478
+  },
+  "active_floors": [],
+  "active_ceilings": [
+    "Email"
+  ]
+}
